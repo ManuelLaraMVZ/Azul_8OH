@@ -107,7 +107,10 @@ graft6 <- graft5+
             nudge_y = 5000,      #respecto al eje y que tanto cambia
             size=6,
             face="bold")+
-  scale_fill_startrek()
+  scale_fill_simpsons()+
+  
+  theme( panel.grid.major = element_blank(),
+         panel.grid.minor = element_blank())
 graft6
 
 ggsave(filename = "Concentraciones_Azulcolor.png",
